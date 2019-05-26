@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "animejs": "^3.0.1",
     "js-yaml": "^3.13.1",
     "muse-ui": "^3.0.2",
     "vue": "^2.5.2"

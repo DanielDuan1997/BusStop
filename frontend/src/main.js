@@ -7,13 +7,19 @@ import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 import theme from 'muse-ui/lib/theme'
 
+import mylogo from '@/components/mylogo'
+import myselector from '@/components/myselector'
+
 theme.add('teal', {
   primary: '#009688',
   secondary: '#ff4081',
   success: '#4caf50',
-  warning: '#ffeb3b',
+  warning: '#ff5722',
 }, 'light');
 theme.use('teal')
+
+Vue.component('mylogo', mylogo)
+Vue.component('myselector', myselector)
 
 Vue.config.productionTip = false
 Vue.use(MuseUI)
