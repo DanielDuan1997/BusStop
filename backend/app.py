@@ -23,7 +23,7 @@ def get_schedule():
 
     sp_check = get_special_days(start_date)
     if sp_check != None:
-        return make_response(jsonify({'schedule': sp_check}), 200)
+        return make_response(jsonify({'schedule': sp_check[0], 'explanation': sp_check[1]}), 200)
 
     weekday = start_date.weekday()
     notice = ""
